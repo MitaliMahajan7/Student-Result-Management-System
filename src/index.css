@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Academic Design System — deep blue + white */
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 91% 24%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 217 91% 45%;
+
+    --secondary: 214 32% 94%;
+    --secondary-foreground: 217 91% 24%;
+
+    --muted: 214 32% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 71% 38%;
+    --warning: 38 92% 50%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 88%;
+    --input: 214 32% 88%;
+    --ring: 217 91% 35%;
+
+    --radius: 0.6rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 24%), hsl(217 91% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 18%) 0%, hsl(217 91% 32%) 50%, hsl(199 89% 48%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(210 40% 98%), hsl(214 32% 94%));
+    --shadow-elegant: 0 10px 30px -12px hsl(217 91% 24% / 0.25);
+    --shadow-card: 0 1px 3px hsl(217 91% 24% / 0.06), 0 4px 12px hsl(217 91% 24% / 0.04);
+
+    --sidebar-background: 217 91% 18%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 199 89% 55%;
+    --sidebar-primary-foreground: 217 91% 18%;
+    --sidebar-accent: 217 91% 24%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 91% 28%;
+    --sidebar-ring: 199 89% 55%;
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 199 89% 55%;
+    --primary-foreground: 222 47% 8%;
+    --primary-glow: 199 89% 65%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 199 89% 48%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 45%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 199 89% 55%;
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 199 89% 55%;
+    --sidebar-primary-foreground: 222 47% 8%;
+    --sidebar-accent: 217 33% 14%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 18%;
+    --sidebar-ring: 199 89% 55%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+  h1, h2, h3, h4 { @apply tracking-tight; }
+}
